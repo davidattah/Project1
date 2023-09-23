@@ -14,15 +14,15 @@ function getPlayerChoice(){
     let condition = true;
     playerSelection = prompt("What is your choice?");
     while(condition == true)
-    if(playerSelection === "Rock" || playerSelection === "Paper" || playerSelection ==="Scissors"){
+    if(playerSelection.toLowerCase() === "rock" || playerSelection.toLowerCase() === "paper" || playerSelection.toLowerCase() === "scissors"){
         condition = false;
         alert("Thank you")
     }else{
-         alert("not a valid option")
+         alert("Not a valid option")
          getPlayerChoice()
     }
 }
 
 function playSingleRound(playerSelection, computerSelection){
-    player
+
 }
