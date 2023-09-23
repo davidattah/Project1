@@ -2,11 +2,11 @@ let computerSelection;
 function getComputerChoice(){
    let randomNumber = Math.floor(Math.random()* 3)+1;
    if(randomNumber == 1){
-    computerSelection = "Rock"
+    computerSelection = "rock"
    }else if(randomNumber == 2){
-    computerSelection = "Paper"
+    computerSelection = "paper"
    }else{
-    computerSelection = "Scissors"
+    computerSelection = "scissors"
    }
 }
 let playerSelection;
@@ -24,5 +24,5 @@ function getPlayerChoice(){
 }
 
 function playSingleRound(playerSelection, computerSelection){
-
+     
 }
