@@ -9,4 +9,20 @@ function getComputerChoice(){
     computerSelection = "Scissors"
    }
 }
+let playerSelection;
+function getPlayerChoice(){
+    let condition = true;
+    playerSelection = prompt("What is your choice?");
+    while(condition == true)
+    if(playerSelection === "Rock" || playerSelection === "Paper" || playerSelection ==="Scissors"){
+        condition = false;
+        alert("Thank you")
+    }else{
+         alert("not a valid option")
+         getPlayerChoice()
+    }
+}
 
+function playSingleRound(playerSelection, computerSelection){
+    player
+}
