@@ -1,4 +1,3 @@
-
 function getComputerChoice(){
    let randomNumber = Math.floor(Math.random()* 3)+1;
    if(randomNumber == 1){
@@ -9,7 +8,6 @@ function getComputerChoice(){
      return computerSelection = "scissors"
    }
 }
-
 
 function getPlayerChoice(){
     let condition = true;
@@ -25,7 +23,6 @@ function getPlayerChoice(){
          getPlayerChoice()
     }
 } 
-
 
 let playerScore = 0;
 let computerScore = 0;
@@ -67,9 +64,7 @@ function game(){
         }else{
            console.log(`It is a tie! ${playerScore} : ${computerScore}.`)
         }
-   
 }
-  
 }
 
 
