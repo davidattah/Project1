@@ -57,6 +57,7 @@ function game(){
     numberOfGames +=1
 }
     if(numberOfGames == 5){
+
         if(playerScore > computerScore){
             console.log(`You win!  ${playerScore} : ${computerScore}.`)
         }else if(computerScore > playerScore){
@@ -64,6 +65,9 @@ function game(){
         }else{
            console.log(`It is a tie! ${playerScore} : ${computerScore}.`)
         }
+        numberOfGames = 0
+        playerScore = 0
+        computerScore = 0
 }
 }
 
