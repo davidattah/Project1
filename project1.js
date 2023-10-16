@@ -50,25 +50,14 @@ function playSingleRound(playerSelection, computerSelection){
      } 
     }
 
-let numberOfGames = 0;
-function game(){
-    for(i = 0; i < 5; i++){
-    playSingleRound(getPlayerChoice(),getComputerChoice())
-    numberOfGames +=1
-}
-    if(numberOfGames == 5){
-
-        if(playerScore > computerScore){
-            console.log(`You win!  ${playerScore} : ${computerScore}.`)
-        }else if(computerScore > playerScore){
-           console.log(`You lose!  ${playerScore} : ${computerScore}.`)
-        }else{
-           console.log(`It is a tie! ${playerScore} : ${computerScore}.`)
-        }
-        numberOfGames = 0
-        playerScore = 0
-        computerScore = 0
-}
-}
+    const body = document.querySelector("body")
+    const rockButton = document.createElement("button")
+    const scissorsButton = document.createElement("button")
+    const paperButton = document.createElement("button")
+    body.appendChild(rockButton)
+    body.appendChild(scissorsButton)
+    body.appendChild(paperButton)
+    
+    
 
 
