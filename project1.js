@@ -52,6 +52,10 @@ function playSingleRound(playerSelection, computerSelection){
        body.appendChild(rockButton)
        body.appendChild(scissorsButton)
        body.appendChild(paperButton)
+
+       rockButton.textContent = "Rock"
+       scissorsButton.textContent = "Scissors"
+       paperButton.textContent = "Paper"
    
        rockButton.id = "rock"
        scissorsButton.id = "scissors"
@@ -74,7 +78,7 @@ function playSingleRound(playerSelection, computerSelection){
 
        const div = document.createElement("div")
        body.appendChild(div)
-       
+
 
   
      
