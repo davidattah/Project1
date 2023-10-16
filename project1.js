@@ -32,6 +32,17 @@ function playSingleRound(playerSelection, computerSelection){
        }else if(playerSelection === computerSelection || computerSelection === playerSelection){
                 div.textContent = (`It is a tie! ${playerScore} : ${computerScore}.`)
         } 
+
+        if(playerScore == 5){
+            div.textContent = (`You win! ${playerScore} : ${computerScore}.`)
+            playerScore = 0;
+            computerScore = 0;
+          }else if(computerScore == 5){
+            div.textContent = (`You lose! ${playerScore} : ${computerScore}.`)
+            playerScore = 0;
+            computerScore = 0;
+          }
+    
        }
    
        const body = document.querySelector("body")
@@ -63,7 +74,9 @@ function playSingleRound(playerSelection, computerSelection){
 
        const div = document.createElement("div")
        body.appendChild(div)
-      
+       
 
+  
+     
 
     
