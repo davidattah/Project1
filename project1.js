@@ -10,27 +10,27 @@ function getComputerChoice(){
 }
     let playerScore = 0;
     let computerScore = 0;
-    function playSingleRound(playerSelection, computerSelection){
+function playSingleRound(playerSelection, computerSelection){
         if(playerSelection === "rock" && computerSelection === "scissors") {
            playerScore +=1;
-           console.log(`You win ${playerSelection} beats ${computerSelection}! ${playerScore} : ${computerScore}.`)
+           div.textContent = (`You win ${playerSelection} beats ${computerSelection}! ${playerScore} : ${computerScore}.`)
         }else if(playerSelection === "paper" && computerSelection === "rock"){
            playerScore +=1;
-           console.log(`You win ${playerSelection} beats ${computerSelection}! ${playerScore} : ${computerScore}.`)
+           div.textContent = (`You win ${playerSelection} beats ${computerSelection}! ${playerScore} : ${computerScore}.`)
         }else if(playerSelection === "scissors" && computerSelection === "paper"){
            playerScore +=1;
-           console.log(`You win ${playerSelection} beats ${computerSelection}! ${playerScore} : ${computerScore}.`)
+           div.textContent = (`You win ${playerSelection} beats ${computerSelection}! ${playerScore} : ${computerScore}.`)
        }else if(computerSelection=== "rock" && playerSelection === "scissors"){
            computerScore +=1;
-           console.log(`You lose ${computerSelection} beats ${playerSelection}! ${playerScore} : ${computerScore}.`) 
+           div.textContent = (`You lose ${computerSelection} beats ${playerSelection}! ${playerScore} : ${computerScore}.`) 
        }else if(computerSelection === "paper" && playerSelection === "rock"){
                computerScore +=1;
-               console.log(`You lose ${computerSelection} beats ${playerSelection}! ${playerScore} : ${computerScore}.`)   
+               div.textContent = (`You lose ${computerSelection} beats ${playerSelection}! ${playerScore} : ${computerScore}.`)   
        }else if(computerSelection === "scissors" && playerSelection === "paper"){
                computerScore +=1;
-               console.log(`You lose ${computerSelection} beats ${playerSelection}! ${playerScore} : ${computerScore}.`) 
+               div.textContent = (`You lose ${computerSelection} beats ${playerSelection}! ${playerScore} : ${computerScore}.`) 
        }else if(playerSelection === computerSelection || computerSelection === playerSelection){
-           console.log(`It is a tie! ${playerScore} : ${computerScore}.`)
+                div.textContent = (`It is a tie! ${playerScore} : ${computerScore}.`)
         } 
        }
    
@@ -59,6 +59,11 @@ function getComputerChoice(){
                }
                playSingleRound(buttonClicked,getComputerChoice())
            })
-          
        })
+
+       const div = document.createElement("div")
+       body.appendChild(div)
+      
+
+
     
